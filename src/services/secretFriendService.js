@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { API_URL } from '@/config/api';
 
 // Función para obtener el token del localStorage
 const getAuthHeader = () => {
@@ -13,7 +12,7 @@ export const secretFriendService = {
     getAuthenticatedUser() {
         const headers = getAuthHeader();
         console.log('Headers enviados:', headers);
-        return axios.get(`${API_URL}/auth/friend-secret`, {
+        return axios.get(`/auth/friend-secret`, {
             headers: headers
         });
     }

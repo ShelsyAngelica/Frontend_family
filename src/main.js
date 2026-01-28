@@ -4,12 +4,12 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import axios from 'axios'
-
+import { API_URL } from './config/api';
 import App from './App.vue'
 import router from './router'
 
 axios.defaults.withCredentials = true
-axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = API_URL;
 
 const app = createApp(App)
 
