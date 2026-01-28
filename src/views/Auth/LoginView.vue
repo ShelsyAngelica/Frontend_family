@@ -18,24 +18,24 @@
 import { ref } from 'vue';
 import axios from 'axios';
 import { useRouter } from 'vue-router';
+import { BASE_URL, API_URL } from '@/config/api';
+
 const email = ref('');
 const password = ref('');
 const router = useRouter();
-
-
 
 const login = async () => {
   const errorMessage = ref('');
 
   try {
     // Pedir CSRF cookie
-    await axios.get('http://localhost:8000/sanctum/csrf-cookie', {
+    await axios.get(`${BASE_URL}/sanctum/csrf-cookie`, {
       withCredentials: true
     })
 
     // Login contra la API real
     const response = await axios.post(
-      'http://localhost:8000/api/auth/login',
+      `${API_URL}/auth/login`,
       {
         email: email.value,
         password: password.value

@@ -44,12 +44,13 @@
 <script setup>
   import { useRouter } from 'vue-router'
   import axios from 'axios'
+  import { API_URL } from '@/config/api'
   
   const router = useRouter()
   
   async function logout() {
     try {
-      await axios.post('http://localhost:8000/api/auth/logout',{},{
+      await axios.post(`${API_URL}/auth/logout`,{},{
         headers:{
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
