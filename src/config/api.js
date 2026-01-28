@@ -5,6 +5,6 @@ let apiUrl = '';
 if (isLocal) {
     apiUrl = 'http://localhost:8000/api';
 } else {
-    apiUrl = 'shelsygarcia.alwaysdata.net/api';
+    apiUrl = 'https://shelsygarcia.alwaysdata.net/api';
 }
 export const API_URL = apiUrl;
