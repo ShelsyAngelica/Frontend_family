@@ -1,0 +1,14 @@
+@import './base.css';
+
+#app {
+  font-family: "Mountains of Christmas", serif;
+}
+
+body{
+  margin: 0;
+  background-color: var(--vt-c-tertiary);
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+}

@@ -1,0 +1,12 @@
+:root {
+  --vt-c-primary: rgb(50,27,33);
+  --vt-c-secondary: rgb(255, 0, 21);
+  --vt-c-tertiary: rgb(249,247,246);
+  --vt-c-quaternary: rgb(192,152,135);
+  --vt-c-quinary: rgb(219, 217, 217);
+  --vt-c-senary: rgb(255, 255, 255);
+  --vt-c-septenary: rgba(255, 31, 31, 0.325);
+  --vt-c-octonary: rgb(45,134,74);
+  --vt-c-nonary: rgb(0, 0, 0);
+
+}
